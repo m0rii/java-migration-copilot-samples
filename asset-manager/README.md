@@ -227,6 +227,8 @@ The deployment scripts can also be executed in GitHub Codespaces, which pre-inst
    scripts/deploy-to-azure.sh -ResourceGroupName <your resource group name> -Location <your resource group location, e.g., eastus2> -Prefix <your unique resource prefix>
    ```
 
+   cd asset-manager && git pull
+   scripts/deploy-to-azure.sh -ResourceGroupName <your resource group name> -Location norwayeast -Prefix <your unique resource prefix>
 1. To clean up, run `scripts\cleanup-azure-resources.cmd -ResourceGroupName <your resource group name>` or `scripts/cleanup-azure-resources.sh -ResourceGroupName <your resource group name>` for Windows and Linux, respectively.
 
 ## Java Migration Copilot Workshop
